@@ -18,7 +18,7 @@ public abstract class Cazador implements  Evaluable, Promovible{
         System.out.println("Nombre: " + nombre);
         System.out.println("Alias: " + alias);
         System.out.println("Arma: " + arma);
-        System.out.println("DanioBase: " + danioBase);
+        System.out.println("DañoBase: " + danioBase);
     }
 
     public String getNombre() {

@@ -5,5 +5,6 @@ public enum TipoArma {
     BALLESTA_PESADA,
     GLAIVE_INSECTO,
     HACHA_CARGADA,
-    CORNAMUSA
+    CORNAMUSA,
+    MAZO
 }
