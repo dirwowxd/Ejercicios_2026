@@ -1,4 +1,4 @@
-package PACKAGE_NAME;
-
 public interface Bonificable {
+    String  getNombreEscuadron();
+    double calcularRecompensaExtra();
 }

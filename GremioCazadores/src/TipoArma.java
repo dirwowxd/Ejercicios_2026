@@ -1,4 +1,9 @@
-package PACKAGE_NAME;
-
 public enum TipoArma {
+    ESPADAS_DUALES,
+    GRAN_ESPADA,
+    HACHA_ESPADA,
+    BALLESTA_PESADA,
+    GLAIVE_INSECTO,
+    HACHA_CARGADA,
+    CORNAMUSA
 }

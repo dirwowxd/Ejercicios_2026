@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
+public interface Promovible {
+    boolean puedeSubirDeRango();
+    String getRangoActual();
 
-public interface promovible {
 }

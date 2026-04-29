@@ -1,4 +1,3 @@
-package PACKAGE_NAME;
-
-public class Asegurable {
+public interface Asegurable {
+     double calcularSeguro();
 }
