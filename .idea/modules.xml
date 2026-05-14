@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/GremioCazadores/GremioCazadores.iml" filepath="$PROJECT_DIR$/GremioCazadores/GremioCazadores.iml" />
       <module fileurl="file://$PROJECT_DIR$/Persistencia/Persistencia.iml" filepath="$PROJECT_DIR$/Persistencia/Persistencia.iml" />
       <module fileurl="file://$PROJECT_DIR$/Persistencia2/Persistencia2.iml" filepath="$PROJECT_DIR$/Persistencia2/Persistencia2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Persistencia3/Persistencia3.iml" filepath="$PROJECT_DIR$/Persistencia3/Persistencia3.iml" />
       <module fileurl="file://$PROJECT_DIR$/TiendaVehiculos/TiendaVehiculos.iml" filepath="$PROJECT_DIR$/TiendaVehiculos/TiendaVehiculos.iml" />
       <module fileurl="file://$PROJECT_DIR$/TorneoVideojuegos/TorneoVideojuegos.iml" filepath="$PROJECT_DIR$/TorneoVideojuegos/TorneoVideojuegos.iml" />
     </modules>

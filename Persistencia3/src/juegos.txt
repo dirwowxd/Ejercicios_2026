@@ -1,0 +1,3 @@
+Monster Hunter Wilds;69.99;true
+GTA;29.99;true
+Minecraft;19.99;true

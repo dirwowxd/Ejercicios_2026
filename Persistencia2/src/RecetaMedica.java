@@ -7,11 +7,10 @@ public class RecetaMedica {
     private LocalDate fecha;
     private ArrayList<String> nombreMedicamentos;
 
-    public RecetaMedica(int nroReceta, String nombrePaciente, LocalDate fecha, ArrayList<String> nombreMedicamentos) {
+    public RecetaMedica(int nroReceta, String nombrePaciente, LocalDate fecha) {
         this.nroReceta = nroReceta;
         this.nombrePaciente = nombrePaciente;
         this.fecha = fecha;
-        this.nombreMedicamentos = new  ArrayList<>(nombreMedicamentos);
     }
 
     public int getNroReceta() {
