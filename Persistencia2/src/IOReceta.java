@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -18,9 +19,9 @@ public class IOReceta {
         }
         return instance;
     }
-    public ArrayList<RecetaMedica> readPersonas() throws FileNotFoundException {
+    public ArrayList<RecetaMedica> readRecetas() throws FileNotFoundException {
         ArrayList<RecetaMedica> mish  = new ArrayList<>();
-        File file = new File("receta.txt");
+        File file = new File("recetas.txt");
         Scanner sc = new Scanner(file);
         int nro=Integer.parseInt(sc.nextLine());
         int procesadas= 0;
@@ -34,7 +35,7 @@ public class IOReceta {
                LocalDate fecha= LocalDate.parse(lineSplit[1], formatter);
                String paciente= lineSplit[2];
                RecetaMedica recetaMedica= new RecetaMedica(nroRecetas, paciente, fecha);
-               for (int i = 3; i <= nroRecetas; i++) {
+               for (int i = 3; i <= lineSplit.length; i++) {
                    String medicamento= lineSplit[i].trim();
                    if (!recetaMedica.addNombreMedicamento(medicamento)) {
                        noIncluidas++;
@@ -43,11 +44,26 @@ public class IOReceta {
                }
                mish.add(recetaMedica);
                procesadas++;
+               sc.close();
            }
         }
-
+        System.out.println("Numero de medicamentos repetidos y no incluidos: " + noIncluidas);
         return mish;
     }
+
+    public void writeRecetas(ArrayList<RecetaMedica> recetas) throws FileNotFoundException {
+        File file = new File("informe.txt");
+        Scanner sc = new Scanner(file);
+        try (PrintWriter writer = new PrintWriter(file)) {
+            writer.println("RECETAS DEL AÑO 2022 QUE INCLUYEN MENTIX");
+            writer.printf("%-11s%-26s%n", "Nro Receta", "Nombre paciente");
+            int totalMentix=0;
+            for (RecetaMedica recetaMedica : recetas) {
+                writer.println(recetaMedica.toString());
+            }
+        }
+    }
+
 
 
 

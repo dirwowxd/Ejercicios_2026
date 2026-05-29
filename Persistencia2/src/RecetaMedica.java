@@ -11,6 +11,7 @@ public class RecetaMedica {
         this.nroReceta = nroReceta;
         this.nombrePaciente = nombrePaciente;
         this.fecha = fecha;
+        this.nombreMedicamentos = new ArrayList<>();
     }
 
     public int getNroReceta() {
@@ -44,6 +45,7 @@ public class RecetaMedica {
     public void setNombreMedicamentos(ArrayList<String> nombreMedicamentos) {
         this.nombreMedicamentos = nombreMedicamentos;
     }
+
     public int getNroMedicamentos() {
         int NroMedicamentos=1;
         for (String nombreMedicamento : nombreMedicamentos) {
@@ -52,37 +54,33 @@ public class RecetaMedica {
         return NroMedicamentos;
     }
     public boolean estaNombreMedicamentos(String nombreMedicamento) {
-        boolean existe=false;
         for (String nombre : nombreMedicamentos) {
             if (nombre.equals(nombreMedicamento)){
-                 existe=true;
-                return existe;
-            } else {
-                return existe;
+
+                return true;
             }
         }
-        return existe;
+        return false;
     }
     public boolean addNombreMedicamento(String nombreMedicamento) {
-        boolean existe=false;
         for (String nombre : nombreMedicamentos) {
-            if(!nombre.contains(nombreMedicamento)){
+            if(!nombre.contains(nombreMedicamento)) {
                 nombreMedicamentos.add(nombreMedicamento);
-                 existe=true;
-                 return existe;
-            } else {
-                return existe;
+                return true;
             }
         }
-
-
-
-
-        return existe;
+        return false;
     }
 
     public String []  getNombreMedicamentosArray() {
+
         return nombreMedicamentos.toArray(new String[0]);
+
+    }
+    @Override
+    public String toString() {
+        return "Receta : "+nroReceta+"\n"+"Paciente : "+nombrePaciente+"\n"+ "Medicamentos : "+getNombreMedicamentos()+ " Fecha "+ getFecha();
+
     }
 
 
