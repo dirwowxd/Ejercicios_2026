@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AdministradorHuerto/AdministradorHuerto.iml" filepath="$PROJECT_DIR$/AdministradorHuerto/AdministradorHuerto.iml" />
       <module fileurl="file://$PROJECT_DIR$/EjercicioFarmaciaPersistencia/EjercicioFarmaciaPersistencia.iml" filepath="$PROJECT_DIR$/EjercicioFarmaciaPersistencia/EjercicioFarmaciaPersistencia.iml" />
       <module fileurl="file://$PROJECT_DIR$/Ejercicios 2026.iml" filepath="$PROJECT_DIR$/Ejercicios 2026.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GestorBuilds/GestorBuilds.iml" filepath="$PROJECT_DIR$/GestorBuilds/GestorBuilds.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GestorLogs/GestorLogs.iml" filepath="$PROJECT_DIR$/GestorLogs/GestorLogs.iml" />
       <module fileurl="file://$PROJECT_DIR$/GremioCazadores/GremioCazadores.iml" filepath="$PROJECT_DIR$/GremioCazadores/GremioCazadores.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MinecraftWhiteList/MinecraftWhiteList.iml" filepath="$PROJECT_DIR$/MinecraftWhiteList/MinecraftWhiteList.iml" />
       <module fileurl="file://$PROJECT_DIR$/Persistencia/Persistencia.iml" filepath="$PROJECT_DIR$/Persistencia/Persistencia.iml" />
       <module fileurl="file://$PROJECT_DIR$/Persistencia2/Persistencia2.iml" filepath="$PROJECT_DIR$/Persistencia2/Persistencia2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Persistencia3/Persistencia3.iml" filepath="$PROJECT_DIR$/Persistencia3/Persistencia3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PersonaPersistencia/PersonaPersistencia.iml" filepath="$PROJECT_DIR$/PersonaPersistencia/PersonaPersistencia.iml" />
       <module fileurl="file://$PROJECT_DIR$/TiendaVehiculos/TiendaVehiculos.iml" filepath="$PROJECT_DIR$/TiendaVehiculos/TiendaVehiculos.iml" />
       <module fileurl="file://$PROJECT_DIR$/TorneoVideojuegos/TorneoVideojuegos.iml" filepath="$PROJECT_DIR$/TorneoVideojuegos/TorneoVideojuegos.iml" />
       <module fileurl="file://$PROJECT_DIR$/ejercicio1/ejercicio1.iml" filepath="$PROJECT_DIR$/ejercicio1/ejercicio1.iml" />

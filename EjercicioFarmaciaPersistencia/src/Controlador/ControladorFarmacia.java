@@ -12,34 +12,39 @@ public class ControladorFarmacia {
     private ArrayList<Medicamento> medicamentos;
     private ArrayList<Laboratorio> laboratorios;
     private static ControladorFarmacia instancia;
-    private ControladorFarmacia(){
+
+    private ControladorFarmacia() {
 
     }
-    public static ControladorFarmacia getInstancia(){
-        if(instancia == null){
+
+    public static ControladorFarmacia getInstancia() {
+        if (instancia == null) {
 
             instancia = new ControladorFarmacia();
         }
         return instancia;
     }
+
     public void addLaboratorio(String nome, String fono, String dir) throws FarmaciaException {
-        Optional<Laboratorio> buscarLab= findLaboratorio(nome);
-        if(buscarLab.isPresent()){
-            throw new FarmaciaException("Laboratorio existente : "+nome);
+        Optional<Laboratorio> buscarLab = findLaboratorio(nome);
+        if (buscarLab.isPresent()) {
+            throw new FarmaciaException("Laboratorio existente : " + nome);
         }
-        Laboratorio lab = new Laboratorio(nome,fono,dir);
+        Laboratorio lab = new Laboratorio(nome, fono, dir);
         laboratorios.add(lab);
 
     }
+
     public void addMedicamento(String nome, Tipo pres, int precio, String nomLab) throws FarmaciaException {
-        Optional<Medicamento> buscarMed= findMedicamento(nome, pres);
-        if(buscarMed.isPresent()){
-            throw new FarmaciaException("Medicamento existente : "+nome);
+        Optional<Medicamento> buscarMed = findMedicamento(nome, pres);
+        if (buscarMed.isPresent()) {
+            throw new FarmaciaException("Medicamento existente : " + nome);
         }
-        Medicamento med= new Medicamento(pres, precio, nome);
+        Medicamento med = new Medicamento(pres, precio, nome);
         medicamentos.add(med);
     }
-    public void addCliente(String rut, String nome, )
+
+    public void addCliente(String rut, String nome
 
 
     private Optional<Medicamento> findMedicamento(String nome, Tipo presentacion) {
@@ -59,7 +64,14 @@ public class ControladorFarmacia {
         }
         return Optional.empty();
     }
-
+    private Optional<Medicamento> findMedicamento(String nome, Tipo pres) {
+        for (Medicamento m : medicamentos) {
+            if (nome.equals(m.getNombre()) && pres.equals(m.getPresentacion())) {
+                return Optional.of(m);
+            }
+        }
+        return Optional.empty();
+    }
 
 
 }

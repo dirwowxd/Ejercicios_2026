@@ -73,7 +73,6 @@ public class RecetaMedica {
     }
 
     public String []  getNombreMedicamentosArray() {
-
         return nombreMedicamentos.toArray(new String[0]);
 
     }
