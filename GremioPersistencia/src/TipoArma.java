@@ -1,0 +1,3 @@
+public enum TipoArma {
+    DUAL_BLADES, GREAT_SWORD, LONG_SWORD, BOW, HAMMER
+}

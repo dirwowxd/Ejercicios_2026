@@ -1,0 +1,3 @@
+public enum TipoObjetivo {
+    ARKVULCAN, GOGMAZIOS, RATHALOS, CHATACABRA, BALAHARA
+}
